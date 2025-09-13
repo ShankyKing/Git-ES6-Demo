@@ -1,0 +1,42 @@
+ <!-- -------------------- DEMO --------------------
+   To run in browser:
+   1. Open index.html with <script src="git-es6.js"></script>
+   2. Open DevTools Console
+   3. Try commands like below:
+      const repo = new Git('demo');
+      repo.commit('Initial commit');
+      repo.commit('Change 1');
+      console.log(repo.log());
+      repo.checkout('feature-x');
+      repo.commit('Feature work');
+      console.log(repo.log());
+      repo.checkout('master');
+      console.log(repo.log()); -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Git ES6 Demo</title>
+</head>
+<body>
+  <script src="git.js"></script>
+  <!-- <script>
+    // Now Git is available as a global (window.Git)
+    const repo = new Git("my-repo");
+
+    repo.commit("Initial commit");
+    repo.commit("Change 1");
+
+    console.log("History on master:", repo.log());
+
+    repo.checkout("testing");
+    repo.commit("Change 2 on testing");
+    console.log("History on testing:", repo.log());
+
+    repo.checkout("master");
+    console.log("Back on master:", repo.log());
+  </script> -->
+</body>
+</html>
